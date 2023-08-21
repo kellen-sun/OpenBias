@@ -1,5 +1,6 @@
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE.md)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/kellen-sun/OpenBias.svg)
+![JamHacks7](https://img.shields.io/badge/event-Hack%20the%206ix%202023-blueviolet)
 
 
 # Description of OpenBias
