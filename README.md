@@ -1,6 +1,6 @@
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE.md)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/kellen-sun/OpenBias.svg)
-![JamHacks7](https://img.shields.io/badge/event-Hack%20the%206ix%202023-blueviolet)
+![Hackthe6ix](https://img.shields.io/badge/event-Hack%20the%206ix%202023-blueviolet)
 
 
 # Description of OpenBias
@@ -18,13 +18,13 @@ OpenBias also employs Google Cloud's Natural Language API to determine the polit
 
 ## Technical Overview
 OpenBias uses a standard HTML/CSS/JS setup for its Chrome Extension. Google Cloud's Natural Language API is also employed.
-The website uses a React front-end and a MongoDB database.
+The website + database uses the MERN stack: React.js front-end (styled with Tailwind CSS), express.js MongoDB database.
 
 ## What's Next?
 1. We hope that OpenBias' ease of use will make it expand to a larger userbase. This will allow us to solidify the ratings we receive as more statistically significant and representative of the population at large. 
 2. This data can also be organized depending on publisher's. This will allow the ratings of individual news articles to be showcased within the broader context of a single publisher and tackle political and other biases within organizations, legacy media and social media influencers.
-3. To prevent fraud and mass bot spams, we aim to create simple CAPTCHA's to ensure ratings are done by humans. 
-4. The large amount of data collected by OpenBias will be important to represent humanity's viewpoints on all issues and can be used as training data to align large language models such as ChatGPT which can be hugely influential. OpenBias' data can be used to predict the political bias of text data.
+3. To prevent fraud and mass bot spams, we will create simple CAPTCHA's to ensure ratings are done by humans. 
+4. The large amount of data collected by OpenBias will be important to represent humanity's viewpoints on all issues and can be used as training data to align and reduce bias in large language models such as ChatGPT, which continue to become hugely influential on the public's viewpoint. This can be performed via reinforcement learning, for example. OpenBias' data can be used to develop an AI model able to predict the political bias of any text data, whether AI-generated or human-written.
 5. OpenBias can also expand beyond the single dimension of left-right political biases, thus tackling more complicated issues in modern society.
 6. OpenBias can expand and become become a leading third-party "fact-checker" based on the opinions of everyone. Once OpenBias is deemed a trustworthy source, we may deliver stamps of approval to news corporations and social media posts to deem articles as unbiased and high quality.
 # Setting Up OpenBias
@@ -35,7 +35,7 @@ The website uses a React front-end and a MongoDB database.
 $ git clone https://github.com/kellen-sun/OpenBias
 ```
 
-## Node Modules
+## Install node modules dependencies
 Website
 ```
 $ cd website
@@ -70,11 +70,12 @@ Get an API key from Google Cloud API. Then paste the key in /chrome_extension/.e
 API_KEY = ...
 ```
 
-## Run express.js database backend (MongoDB)
-Make a Atlas Database and procure an URI. Add the URI to /website/database/.env (create the file).\
+## Create MongoDB database and URI
+Make a Atlas Database and procure an URI. Create /website/database/.env and add your URI: 
 ```
 ATLAS_URI = mongodb+srv:// ...
 ```
+## Run express.js database backend (MongoDB)
 ```
 $ cd website/database
 $ nodemon server
