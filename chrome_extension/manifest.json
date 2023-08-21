@@ -1,0 +1,13 @@
+{
+    "name": "OpenBias",
+    "version": "1.0.1",
+    "description": "Political Bias of this Article",
+    "manifest_version": 3,
+    "author": "Kellen Sun",
+    "action":{
+        "default_popup": "extension.html",
+        "default_title": "OpenBias"
+    },
+    "permissions": ["tabs", "activeTabs"]
+    
+}

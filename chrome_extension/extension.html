@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Political Bias</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://apis.google.com 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' 'inline-speculation-rules' http://localhost:* http://127.0.0.1:*;">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div style="width: 450px;">
+        <div id="help" class="tooltip">
+            <p>	&#9432</p>
+            <span class="tooltiptext">Click on the square that you think best represents the bias of this news article. The closer to the middle means least bias. The left side means leaning left politically (against conservatives) and the right side means leaning right politically (against liberals).</span>
+        </div>
+        <br>
+        <h1 id="rate">
+            Rate this news article
+        </h1>
+        <div id="rating">
+            L
+            <button id="b1" class="select">&#160&#160</button>
+            <button class="select" id="b2">&#160&#160</button>
+            <button class="select" id="b3">&#160&#160</button>
+            <button class="select" id="b4">&#160&#160</button>
+            <button class="select" id="b5">&#160&#160</button>
+            <button class="select" id="b6">&#160&#160</button>
+            <button class="select" id="b7">&#160&#160</button>
+            <button class="select" id="b8">&#160&#160</button>
+            <button class="select" id="b9">&#160&#160</button>
+            R
+        </div>
+        <br><br><br>
+        <div id="average2">
+            
+            <h2>L------------------------------|----------------------------R</h2>
+        </div>
+        <div class="tooltip2">
+            <p id="average">
+                Average bias: 
+            </p>
+            <span class="tooltiptext2">Average</span>
+        </div>
+        <p id="political"></p>
+        <br><br><br>
+        <a href="http://localhost:3000" target="_blank" rel="noreferrer noopener">More stats...</a>
+    </div>
+</body>
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="./node_modules/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</html>

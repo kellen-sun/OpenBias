@@ -1,0 +1,36 @@
+
+.grid {
+    width: 85vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1rem;
+}
+
+.grid-item {
+    height: 20vh;
+    background-color: #222;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin: 1rem;
+}
+
+.grid2 {
+    width: 85vw;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-top: 1rem;
+}
+
+.grid-item2 {
+    height: 14vh;
+    background-color: #222;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
