@@ -70,14 +70,15 @@ Get an API key from Google Cloud API. Then paste the key in /chrome_extension/.e
 API_KEY = ...
 ```
 
-## Create MongoDB database and URI
-Make a Atlas Database and procure an URI. Create /website/database/.env and add your URI: 
+## Run express.js MongoDB database
+Create an Atlas Database and procure an URI. Create /website/database/.env and add your URI: 
 ```
 ATLAS_URI = mongodb+srv:// ...
 ```
-## Run express.js MongoDB database
+Install and use nodemon to run `server.js`
 ```
 $ cd website/database
+$ npm install -g nodemon
 $ nodemon server
 ```
 
