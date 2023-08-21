@@ -25,8 +25,9 @@ async function fetchData(link, title) {
                       "content": title,
                       "type": "PLAIN_TEXT"
                     }
-                  };
-                axios.post('https://language.googleapis.com/v1/documents:moderateText?key=AIzaSyAAFBGhuP1QwijXBky9-L8blKewIVr2zNc', data)
+                };
+                const API_KEY = process.env.API_KEY;
+                axios.post('https://language.googleapis.com/v1/documents:moderateText?key='+API_KEY, data)
                 .then((res) => {
                     var confidence = res.data["moderationCategories"][13]["confidence"];
                     if (confidence>0.4) {
