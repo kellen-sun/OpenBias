@@ -75,7 +75,7 @@ Make a Atlas Database and procure an URI. Create /website/database/.env and add 
 ```
 ATLAS_URI = mongodb+srv:// ...
 ```
-## Run express.js database backend (MongoDB)
+## Run express.js MongoDB database
 ```
 $ cd website/database
 $ nodemon server
