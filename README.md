@@ -70,7 +70,7 @@ Get an API key from Google Cloud API. Then paste the key in /chrome_extension/.e
 API_KEY = ...
 ```
 
-## Run MongoDB
+## Run express.js database backend (MongoDB)
 Make a Atlas Database and procure an URI. Add the URI to /website/database/.env (create the file).\
 ```
 ATLAS_URI = mongodb+srv:// ...
